@@ -215,7 +215,7 @@ export class LibraryDialogComponent implements OnInit, OnDestroy {
         maxItems: 1,
         fields: ['title']
       })
-      .catch(() => ({ list: { entries: [] } }));
+      .catch(() => (new SitePaging({ list: { entries: [] } })));
   }
 
   private forbidSpecialCharacters({ value }: FormControl) {
