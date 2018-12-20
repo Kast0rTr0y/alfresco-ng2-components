@@ -23,6 +23,7 @@ import { TaskCloudModule } from './task-cloud/task-cloud.module';
 import { ProcessListCloudModule } from './process-list-cloud/process-list-cloud.module';
 import { ProcessCloudModule } from './process-cloud/process-cloud.module';
 import { StartTaskCloudModule } from './start-task-cloud/start-task-cloud.module';
+import { GroupCloudModule } from './group-cloud/group-cloud.module';
 
 @NgModule({
     imports: [
@@ -31,7 +32,8 @@ import { StartTaskCloudModule } from './start-task-cloud/start-task-cloud.module
         TaskCloudModule,
         ProcessListCloudModule,
         ProcessCloudModule,
-        StartTaskCloudModule
+        StartTaskCloudModule,
+        GroupCloudModule
     ],
     providers: [
         {
@@ -49,7 +51,8 @@ import { StartTaskCloudModule } from './start-task-cloud/start-task-cloud.module
         TaskCloudModule,
         ProcessListCloudModule,
         ProcessCloudModule,
-        StartTaskCloudModule
+        StartTaskCloudModule,
+        GroupCloudModule
     ]
 })
 export class ProcessServicesCloudModule { }
